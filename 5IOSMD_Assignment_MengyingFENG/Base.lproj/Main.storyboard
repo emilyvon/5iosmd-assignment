@@ -24,8 +24,6 @@
             <string>Quicksand-Regular</string>
             <string>Quicksand-Regular</string>
             <string>Quicksand-Regular</string>
-            <string>Quicksand-Regular</string>
-            <string>Quicksand-Regular</string>
         </mutableArray>
         <mutableArray key="Roboto-Light.ttf">
             <string>Roboto-Light</string>
@@ -247,16 +245,16 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cr0-cb-SuE">
-                                        <rect key="frame" x="527" y="36" width="56" height="30"/>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ej0-SW-sGU">
+                                        <rect key="frame" x="551" y="38" width="41" height="19"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="7KK-UG-azM"/>
-                                            <constraint firstAttribute="width" constant="56" id="dB1-KE-5JY"/>
+                                            <constraint firstAttribute="height" constant="19" id="7jW-rG-lcV"/>
+                                            <constraint firstAttribute="width" constant="41" id="iTB-qt-a02"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="15"/>
-                                        <state key="normal" title="Add">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <state key="normal" image="send"/>
+                                        <connections>
+                                            <action selector="sendButtonPressed:" destination="wUq-dn-ok9" eventType="touchUpInside" id="tur-Ug-0pD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.3803921569" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
@@ -264,15 +262,17 @@
                                     <constraint firstItem="Vzf-1r-E0o" firstAttribute="leading" secondItem="8HX-5H-TT8" secondAttribute="leading" constant="8" id="0cp-e0-7Kj"/>
                                     <constraint firstItem="Vzf-1r-E0o" firstAttribute="top" secondItem="8HX-5H-TT8" secondAttribute="top" id="3Tw-dn-6CS"/>
                                     <constraint firstItem="Vzf-1r-E0o" firstAttribute="leading" secondItem="8HX-5H-TT8" secondAttribute="leading" constant="8" id="BiZ-1B-icz"/>
-                                    <constraint firstAttribute="bottom" secondItem="cr0-cb-SuE" secondAttribute="bottom" constant="5" id="ClB-MH-Y8M"/>
-                                    <constraint firstAttribute="trailing" secondItem="cr0-cb-SuE" secondAttribute="trailing" constant="17" id="NiT-8j-0NE"/>
                                     <constraint firstItem="Vzf-1r-E0o" firstAttribute="top" secondItem="8HX-5H-TT8" secondAttribute="top" constant="35" id="S9a-AD-BAV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ej0-SW-sGU" secondAttribute="trailing" constant="8" id="T9a-3Z-tdL"/>
+                                    <constraint firstAttribute="bottom" secondItem="ej0-SW-sGU" secondAttribute="bottom" constant="14" id="geg-GA-Xks"/>
                                     <constraint firstAttribute="height" constant="71" id="lXr-2c-g4o"/>
+                                    <constraint firstAttribute="bottom" secondItem="ej0-SW-sGU" secondAttribute="bottom" constant="8" id="uyj-LC-lnD"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="0cp-e0-7Kj"/>
                                         <exclude reference="3Tw-dn-6CS"/>
+                                        <exclude reference="uyj-LC-lnD"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -315,16 +315,13 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUH-4L-erh">
-                                        <rect key="frame" x="527" y="36" width="56" height="30"/>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUH-4L-erh">
+                                        <rect key="frame" x="567" y="35" width="25" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="S0E-6W-xvr"/>
-                                            <constraint firstAttribute="width" constant="56" id="rbl-lJ-Awf"/>
+                                            <constraint firstAttribute="height" constant="25" id="S0E-6W-xvr"/>
+                                            <constraint firstAttribute="width" constant="25" id="rbl-lJ-Awf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="15"/>
-                                        <state key="normal" title="Add">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <state key="normal" image="addaddress"/>
                                         <connections>
                                             <segue destination="FfX-AC-MDo" kind="show" id="YG8-fV-XTd"/>
                                         </connections>
@@ -332,38 +329,32 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.3803921569" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="aqq-fN-cyS" firstAttribute="top" secondItem="NT5-Y5-v9E" secondAttribute="top" id="3or-kD-6ZX"/>
+                                    <constraint firstAttribute="bottom" secondItem="hUH-4L-erh" secondAttribute="bottom" constant="11" id="3dt-WZ-W97"/>
                                     <constraint firstItem="aqq-fN-cyS" firstAttribute="top" secondItem="NT5-Y5-v9E" secondAttribute="top" constant="35" id="SoW-vC-3cu"/>
                                     <constraint firstAttribute="height" constant="71" id="VtM-Q8-36W"/>
-                                    <constraint firstAttribute="bottom" secondItem="hUH-4L-erh" secondAttribute="bottom" constant="5" id="YET-HI-mWh"/>
-                                    <constraint firstAttribute="trailing" secondItem="hUH-4L-erh" secondAttribute="trailing" constant="17" id="r8N-bU-cG0"/>
+                                    <constraint firstAttribute="trailing" secondItem="hUH-4L-erh" secondAttribute="trailing" constant="8" id="aqf-Yv-iVp"/>
                                     <constraint firstItem="aqq-fN-cyS" firstAttribute="leading" secondItem="NT5-Y5-v9E" secondAttribute="leading" constant="8" id="tga-mh-nrI"/>
-                                    <constraint firstItem="aqq-fN-cyS" firstAttribute="leading" secondItem="NT5-Y5-v9E" secondAttribute="leading" constant="8" id="urv-YG-ujZ"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="3or-kD-6ZX"/>
-                                        <exclude reference="urv-YG-ujZ"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VwB-y6-pTS">
-                                <rect key="frame" x="0.0" y="70" width="600" height="481"/>
+                                <rect key="frame" x="0.0" y="71" width="600" height="485"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VwB-y6-pTS" firstAttribute="top" secondItem="yh5-W2-rLc" secondAttribute="bottom" constant="50" id="CdG-oB-3RT"/>
                             <constraint firstItem="NT5-Y5-v9E" firstAttribute="leading" secondItem="NZi-y1-29u" secondAttribute="leading" id="QmF-r6-lPH"/>
                             <constraint firstItem="NT5-Y5-v9E" firstAttribute="top" secondItem="NZi-y1-29u" secondAttribute="top" id="TUK-uC-pgh"/>
                             <constraint firstAttribute="trailing" secondItem="VwB-y6-pTS" secondAttribute="trailing" id="YZn-3b-lab"/>
+                            <constraint firstItem="VwB-y6-pTS" firstAttribute="top" secondItem="NT5-Y5-v9E" secondAttribute="bottom" id="ama-Nj-ceu"/>
                             <constraint firstItem="c2Y-V3-csX" firstAttribute="top" secondItem="VwB-y6-pTS" secondAttribute="bottom" id="anT-Pi-m6K"/>
                             <constraint firstAttribute="trailing" secondItem="NT5-Y5-v9E" secondAttribute="trailing" id="hSn-mx-Pgj"/>
                             <constraint firstItem="VwB-y6-pTS" firstAttribute="leading" secondItem="NZi-y1-29u" secondAttribute="leading" id="rh7-gT-DK3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Address" image="place" id="0xI-hg-neZ"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqf-Gg-dLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -413,7 +404,7 @@
                                 <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-XA-Q65" customClass="CustomButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-XA-Q65" customClass="CustomButton">
                                 <rect key="frame" x="20" y="481" width="261" height="50"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.3803921569" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -425,7 +416,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edg-O1-8Sr" customClass="CancelButton">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edg-O1-8Sr" customClass="CancelButton">
                                 <rect key="frame" x="319" y="481" width="261" height="50"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.3803921569" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -601,10 +592,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addaddress" width="100" height="100"/>
         <image name="camera" width="1134" height="1134"/>
         <image name="email" width="20" height="28"/>
         <image name="place" width="20" height="29"/>
         <image name="plus" width="25" height="25"/>
+        <image name="send" width="90" height="42"/>
         <image name="total" width="22" height="28"/>
     </resources>
 </document>
