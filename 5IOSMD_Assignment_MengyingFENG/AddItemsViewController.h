@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MMPickerView.h"
-@interface AddItemsViewController : UIViewController <UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
+#import "DownPicker.h"
+
+@interface AddItemsViewController : UIViewController <UITextFieldDelegate>
 {
-    NSMutableArray *sampleData;
+//    NSMutableArray *sampleData;
 }
-- (IBAction)showPickerViewPressed:(id)sender;
-- (IBAction)hidePickerViewPressed:(id)sender;
-@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (weak, nonatomic) IBOutlet UITextField *productNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *productPriceTextField;
+@property (weak, nonatomic) IBOutlet UITextField *productQuantityTextField;
+@property (strong, nonatomic) DownPicker *downPicker;
+- (IBAction)clearButtonPressed:(id)sender;
 @end

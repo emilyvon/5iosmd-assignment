@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1965EA70C24D9BA449E9B96A /* libPods-5IOSMD_Assignment_MengyingFENG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D780F782608EADC9DF42544 /* libPods-5IOSMD_Assignment_MengyingFENG.a */; };
 		EB00D9051CC344C0007D9531 /* AddAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB00D9041CC344C0007D9531 /* AddAddressViewController.m */; };
 		EB472E8C1CC27C60005AF7D4 /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB472E8B1CC279F2005AF7D4 /* Quicksand-Regular.otf */; };
 		EB675E161CBE21D800C9384B /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB675E151CBE21D800C9384B /* CustomButton.m */; };
 		EB88D7221CBF20E100D1CD5B /* CancelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D7211CBF20E100D1CD5B /* CancelButton.m */; };
-		EB88D7251CBF23BA00D1CD5B /* MMPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D7241CBF23BA00D1CD5B /* MMPickerView.m */; };
 		EB8F28C91CBE68030098FC14 /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8F28C81CBE68030098FC14 /* CustomImageView.m */; };
+		EB96EFAC1CC36701005E947C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB96EFAB1CC36701005E947C /* MessageUI.framework */; };
 		EBB4DFA71CC0AA9300033E96 /* CustomUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4DFA61CC0AA9300033E96 /* CustomUIView.m */; };
+		F8FF5CFAD2A91EC3C1BE57B5 /* libPods-5IOSMD_Assignment_MengyingFENGTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1704E0DEF2484B9B06924A /* libPods-5IOSMD_Assignment_MengyingFENGTests.a */; };
 		FF9715A61CBDD426002CD515 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9715A51CBDD426002CD515 /* main.m */; };
 		FF9715A91CBDD426002CD515 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9715A81CBDD426002CD515 /* AppDelegate.m */; };
 		FF9715B21CBDD426002CD515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9715B01CBDD426002CD515 /* Main.storyboard */; };
@@ -37,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27DFBF8D674B0002825F8E02 /* Pods-5IOSMD_Assignment_MengyingFENG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5IOSMD_Assignment_MengyingFENG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENG/Pods-5IOSMD_Assignment_MengyingFENG.debug.xcconfig"; sourceTree = "<group>"; };
+		2E443411C21B4AF4705C7E27 /* Pods-5IOSMD_Assignment_MengyingFENGTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5IOSMD_Assignment_MengyingFENGTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENGTests/Pods-5IOSMD_Assignment_MengyingFENGTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D780F782608EADC9DF42544 /* libPods-5IOSMD_Assignment_MengyingFENG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-5IOSMD_Assignment_MengyingFENG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1704E0DEF2484B9B06924A /* libPods-5IOSMD_Assignment_MengyingFENGTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-5IOSMD_Assignment_MengyingFENGTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E4E6F729B504A2C7BB1DC6 /* Pods-5IOSMD_Assignment_MengyingFENGTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5IOSMD_Assignment_MengyingFENGTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENGTests/Pods-5IOSMD_Assignment_MengyingFENGTests.release.xcconfig"; sourceTree = "<group>"; };
+		C04E9E42486600F24DC7B6B0 /* Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig"; path = "Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENG/Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig"; sourceTree = "<group>"; };
 		EB00D9031CC344C0007D9531 /* AddAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAddressViewController.h; sourceTree = "<group>"; };
 		EB00D9041CC344C0007D9531 /* AddAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAddressViewController.m; sourceTree = "<group>"; };
 		EB472E8B1CC279F2005AF7D4 /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.otf"; sourceTree = "<group>"; };
@@ -44,10 +52,9 @@
 		EB675E151CBE21D800C9384B /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		EB88D7201CBF20E100D1CD5B /* CancelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelButton.h; sourceTree = "<group>"; };
 		EB88D7211CBF20E100D1CD5B /* CancelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelButton.m; sourceTree = "<group>"; };
-		EB88D7231CBF23BA00D1CD5B /* MMPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPickerView.h; sourceTree = "<group>"; };
-		EB88D7241CBF23BA00D1CD5B /* MMPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPickerView.m; sourceTree = "<group>"; };
 		EB8F28C71CBE68030098FC14 /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
 		EB8F28C81CBE68030098FC14 /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
+		EB96EFAB1CC36701005E947C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EBB4DFA51CC0AA9300033E96 /* CustomUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIView.h; sourceTree = "<group>"; };
 		EBB4DFA61CC0AA9300033E96 /* CustomUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIView.m; sourceTree = "<group>"; };
 		FF9715A01CBDD426002CD515 /* 5IOSMD_Assignment_MengyingFENG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5IOSMD_Assignment_MengyingFENG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB96EFAC1CC36701005E947C /* MessageUI.framework in Frameworks */,
+				1965EA70C24D9BA449E9B96A /* libPods-5IOSMD_Assignment_MengyingFENG.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,12 +92,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FF5CFAD2A91EC3C1BE57B5 /* libPods-5IOSMD_Assignment_MengyingFENGTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43DB7D47CF1F4356D3261711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D1704E0DEF2484B9B06924A /* libPods-5IOSMD_Assignment_MengyingFENGTests.a */,
+				6D780F782608EADC9DF42544 /* libPods-5IOSMD_Assignment_MengyingFENG.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B1893127F06F22FDB79E862 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E443411C21B4AF4705C7E27 /* Pods-5IOSMD_Assignment_MengyingFENGTests.debug.xcconfig */,
+				89E4E6F729B504A2C7BB1DC6 /* Pods-5IOSMD_Assignment_MengyingFENGTests.release.xcconfig */,
+				27DFBF8D674B0002825F8E02 /* Pods-5IOSMD_Assignment_MengyingFENG.debug.xcconfig */,
+				C04E9E42486600F24DC7B6B0 /* Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB675E0F1CBE20B500C9384B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +139,6 @@
 		EB675E101CBE20CD00C9384B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EB88D7231CBF23BA00D1CD5B /* MMPickerView.h */,
-				EB88D7241CBF23BA00D1CD5B /* MMPickerView.m */,
 				EB675E131CBE211600C9384B /* Storyboards & Xibs */,
 				EB675E141CBE21D800C9384B /* CustomButton.h */,
 				EB675E151CBE21D800C9384B /* CustomButton.m */,
@@ -152,9 +180,12 @@
 		FF9715971CBDD426002CD515 = {
 			isa = PBXGroup;
 			children = (
+				EB96EFAB1CC36701005E947C /* MessageUI.framework */,
 				FF9715A21CBDD426002CD515 /* 5IOSMD_Assignment_MengyingFENG */,
 				FF9715BF1CBDD426002CD515 /* 5IOSMD_Assignment_MengyingFENGTests */,
 				FF9715A11CBDD426002CD515 /* Products */,
+				8B1893127F06F22FDB79E862 /* Pods */,
+				43DB7D47CF1F4356D3261711 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF9715C61CBDD426002CD515 /* Build configuration list for PBXNativeTarget "5IOSMD_Assignment_MengyingFENG" */;
 			buildPhases = (
+				B47860500133A14CA81A5AA2 /* Check Pods Manifest.lock */,
 				FF97159C1CBDD426002CD515 /* Sources */,
 				FF97159D1CBDD426002CD515 /* Frameworks */,
 				FF97159E1CBDD426002CD515 /* Resources */,
+				DBCDA7FF13A619D5A104B2E7 /* Embed Pods Frameworks */,
+				F6AD53AE49936E0F9606EA32 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF9715C91CBDD426002CD515 /* Build configuration list for PBXNativeTarget "5IOSMD_Assignment_MengyingFENGTests" */;
 			buildPhases = (
+				32E6E8C23FB513BAB8BBBC58 /* Check Pods Manifest.lock */,
 				FF9715B81CBDD426002CD515 /* Sources */,
 				FF9715B91CBDD426002CD515 /* Frameworks */,
 				FF9715BA1CBDD426002CD515 /* Resources */,
+				E83180132A311533EE4A6F3F /* Embed Pods Frameworks */,
+				D91EB7DBC7541EECCCC0959B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,6 +340,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32E6E8C23FB513BAB8BBBC58 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B47860500133A14CA81A5AA2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D91EB7DBC7541EECCCC0959B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENGTests/Pods-5IOSMD_Assignment_MengyingFENGTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBCDA7FF13A619D5A104B2E7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENG/Pods-5IOSMD_Assignment_MengyingFENG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E83180132A311533EE4A6F3F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENGTests/Pods-5IOSMD_Assignment_MengyingFENGTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6AD53AE49936E0F9606EA32 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENG/Pods-5IOSMD_Assignment_MengyingFENG-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF97159C1CBDD426002CD515 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,7 +446,6 @@
 				EB88D7221CBF20E100D1CD5B /* CancelButton.m in Sources */,
 				FF9715D71CBDD558002CD515 /* AddressViewController.m in Sources */,
 				EB00D9051CC344C0007D9531 /* AddAddressViewController.m in Sources */,
-				EB88D7251CBF23BA00D1CD5B /* MMPickerView.m in Sources */,
 				EBB4DFA71CC0AA9300033E96 /* CustomUIView.m in Sources */,
 				FF9715DA1CBDD580002CD515 /* OtherViewController.m in Sources */,
 				FF9715A61CBDD426002CD515 /* main.m in Sources */,
@@ -442,6 +571,7 @@
 		};
 		FF9715C71CBDD426002CD515 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27DFBF8D674B0002825F8E02 /* Pods-5IOSMD_Assignment_MengyingFENG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 5IOSMD_Assignment_MengyingFENG/Info.plist;
@@ -453,6 +583,7 @@
 		};
 		FF9715C81CBDD426002CD515 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04E9E42486600F24DC7B6B0 /* Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 5IOSMD_Assignment_MengyingFENG/Info.plist;
