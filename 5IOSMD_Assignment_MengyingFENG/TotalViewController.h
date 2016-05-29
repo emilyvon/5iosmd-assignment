@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShoppingList.h"
+#include <sqlite3.h>
+#import "AppDelegate.h"
+#import "DataService.h"
 
-@interface TotalViewController : UIViewController
+@interface TotalViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    NSMutableArray *shoppingListArray;
+}
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *totalAmountLabel;
 
 @end

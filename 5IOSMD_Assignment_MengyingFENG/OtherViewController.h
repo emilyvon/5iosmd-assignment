@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import "DataService.h"
 
-@interface OtherViewController : UIViewController <MFMailComposeViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface OtherViewController : UIViewController <MFMailComposeViewControllerDelegate, UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 {
     MFMailComposeViewController *mailComposer;
     NSMutableArray *emailArray;
+    UIAlertView *alert;
 }
 @property (weak, nonatomic) IBOutlet UITableView *emailTableView;
 - (IBAction)sendMailButtonPressed:(id)sender;

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddAddressViewController.h"
 
-@interface AddressViewController : UIViewController
+@interface AddressViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, AddAddressViewControllerDelegate>
+{
+    NSMutableArray *addressListArray;
+}
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

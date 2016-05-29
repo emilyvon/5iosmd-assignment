@@ -14,11 +14,60 @@
 
 @implementation AppDelegate
 
+NSString *DATABASE_RESOURCE_NAME = @"DBShoppingList";
+NSString *DATABASE_RESOURCE_TYPE = @"db";
+NSString *DATABASE_FILE_NAME = @"DBShoppingList.db";
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+
+- (BOOL) initializeDb {
+    NSLog (@"initializeDB");
+    // look to see if DB is in known location (~/Documents/$DATABASE_FILE_NAME)
+    NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *documentFolderPath = [searchPaths objectAtIndex: 0];
+    
+    _dbFilePath = [documentFolderPath stringByAppendingPathComponent:DATABASE_FILE_NAME];
+    
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath: _dbFilePath]) { // didn't find db, need to copy
+        NSString *backupDbPath = [[NSBundle mainBundle] pathForResource:DATABASE_RESOURCE_NAME ofType:DATABASE_RESOURCE_TYPE];
+        
+        if (backupDbPath == nil) {
+            // couldn't find backup db to copy, bail
+            return NO;
+        } else {
+            BOOL copiedBackupDb = [[NSFileManager defaultManager]copyItemAtPath:backupDbPath toPath:_dbFilePath error:nil];
+            if (! copiedBackupDb) {
+                // copying backup db failed, bail
+                return NO;
+            } }
+    }
+    NSLog (@"end of initializeDb");
     return YES;
 }
+
+
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // copy the database from the bundle if necessary
+    if (![self initializeDb]) {
+        // TODO: alert the user!
+        NSLog (@"couldn't init db");
+    }
+    
+//    UITabBarController *tabController = (UITabBarController *)self.window.rootViewController;
+//    tabController.selectedIndex = 3;
+//    NSLog(@"Root: %@", tabController);
+    
+    return YES;
+}
+
+//-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+//    NSLog([NSString stringWithFormat:@"Tab bar item tag: %ld", (long)item.tag]);
+//    NSLog(item.title);
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

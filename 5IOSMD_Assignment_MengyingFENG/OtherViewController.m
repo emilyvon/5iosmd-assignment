@@ -9,7 +9,9 @@
 #import "OtherViewController.h"
 
 @interface OtherViewController ()
-
+{
+    NSMutableArray *selectedEmails;
+}
 @end
 
 @implementation OtherViewController
@@ -17,32 +19,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _emailTableView.allowsMultipleSelection = YES;
+    
     [_emailTableView setDelegate:self];
     [_emailTableView setDataSource:self];
-
+    
     
     emailArray = [[NSMutableArray alloc]init];
-    [emailArray addObject:@"emily@hotmail.com"];
-    [emailArray addObject:@"emily@outlook.com"];
-    [emailArray addObject:@"emily@gmail.com"];
-    [emailArray addObject:@"emily@yahoo.com"];
+    [emailArray addObject:@"41663316@foxmail.com"];
+    [emailArray addObject:@"41663316@outlook.com"];
+    [emailArray addObject:@"emilyfung@outlook.com.au"];
+    [emailArray addObject:@"emilyfung86@hotmail.com"];
+    
+    selectedEmails = [[NSMutableArray alloc]initWithCapacity:50];
+    
+    
+    
 }
 
 // MARK: MFMailComposeViewControllerDelegate
 
 - (IBAction)sendMailButtonPressed:(id)sender {
-    //http://www.appcoda.com/ios-programming-101-send-email-iphone-app/
-    NSString *title = @"Your order summay";
-    NSString *body = @"This is your order summary: ";
-    NSArray *toEmails = [NSArray arrayWithObject:@"emilyfung86@hotmail.com"];
     
-    
-    mailComposer = [[MFMailComposeViewController alloc]init];
-    mailComposer.mailComposeDelegate = self;
-    [mailComposer setSubject:title];
-    [mailComposer setMessageBody:body isHTML:NO];
-    [mailComposer setToRecipients:toEmails];
-    [self presentViewController:mailComposer animated:YES completion:nil];
+    if (selectedEmails.count < 1) {
+        alert = [[UIAlertView alloc]initWithTitle:@"Error" message:@"Please select at least one email." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    } else {
+        alert = [[UIAlertView alloc]initWithTitle:@"Confirmation" message:@"Send order to selected emails?" delegate:self cancelButtonTitle:@"YES" otherButtonTitles:@"NO", nil];
+    }
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        NSString *price = [[NSUserDefaults standardUserDefaults]valueForKey:@"totalPrice"];
+        
+        NSString *title = @"Your order summay";
+        NSString *body = [[NSString alloc]initWithFormat:@"Your order summary: \n\n%@", price];
+        NSArray *toEmails = selectedEmails;
+        
+        mailComposer = [[MFMailComposeViewController alloc]init];
+        mailComposer.mailComposeDelegate = self;
+        [mailComposer setSubject:title];
+        [mailComposer setMessageBody:body isHTML:NO];
+        [mailComposer setToRecipients:toEmails];
+        [self presentViewController:mailComposer animated:YES completion:nil];
+    }
 }
 
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
@@ -73,16 +94,22 @@
     }
     
     cell.textLabel.text = [emailArray objectAtIndex:indexPath.row];
+    UIView * bg = [[UIView alloc]init];
+    bg.backgroundColor = [UIColor colorWithRed:238.0/255.0 green:97.0/255.0 blue:100.0/255.0 alpha:0.20];
+    [cell setSelectedBackgroundView:bg];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [_emailTableView cellForRowAtIndexPath:indexPath].selectionStyle = UITableViewCellSelectionStyleDefault;
-    if ([_emailTableView cellForRowAtIndexPath:indexPath].accessoryType == UITableViewCellAccessoryCheckmark) {
-        [_emailTableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-    } else {
-        [_emailTableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
-    }
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *txt = cell.textLabel.text;
+    [selectedEmails addObject:txt];
 }
 
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *txt = cell.textLabel.text;
+    [selectedEmails removeObject:txt];
+}
 @end

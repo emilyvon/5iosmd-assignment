@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		1965EA70C24D9BA449E9B96A /* libPods-5IOSMD_Assignment_MengyingFENG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D780F782608EADC9DF42544 /* libPods-5IOSMD_Assignment_MengyingFENG.a */; };
 		EB00D9051CC344C0007D9531 /* AddAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB00D9041CC344C0007D9531 /* AddAddressViewController.m */; };
+		EB16EE5F1CE88E240032C72C /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = EB16EE5E1CE88E240032C72C /* Address.m */; };
+		EB395A161CF1B2AF00B2DC1E /* ShoppingListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB395A151CF1B2AF00B2DC1E /* ShoppingListTableViewCell.m */; };
 		EB472E8C1CC27C60005AF7D4 /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB472E8B1CC279F2005AF7D4 /* Quicksand-Regular.otf */; };
 		EB675E161CBE21D800C9384B /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB675E151CBE21D800C9384B /* CustomButton.m */; };
 		EB88D7221CBF20E100D1CD5B /* CancelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB88D7211CBF20E100D1CD5B /* CancelButton.m */; };
 		EB8F28C91CBE68030098FC14 /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8F28C81CBE68030098FC14 /* CustomImageView.m */; };
 		EB96EFAC1CC36701005E947C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB96EFAB1CC36701005E947C /* MessageUI.framework */; };
 		EBB4DFA71CC0AA9300033E96 /* CustomUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4DFA61CC0AA9300033E96 /* CustomUIView.m */; };
+		EBC1ED6C1CE6E70900544616 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC1ED6B1CE6E70900544616 /* libsqlite3.tbd */; };
+		EBC1ED6F1CE6EA7700544616 /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC1ED6E1CE6EA7700544616 /* ShoppingList.m */; };
+		EBC1ED731CE7028B00544616 /* DBShoppingList.db in Resources */ = {isa = PBXBuildFile; fileRef = EBC1ED721CE7028B00544616 /* DBShoppingList.db */; };
+		EBC1ED771CE75C4800544616 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC1ED761CE75C4800544616 /* DataService.m */; };
 		F8FF5CFAD2A91EC3C1BE57B5 /* libPods-5IOSMD_Assignment_MengyingFENGTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1704E0DEF2484B9B06924A /* libPods-5IOSMD_Assignment_MengyingFENGTests.a */; };
 		FF9715A61CBDD426002CD515 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9715A51CBDD426002CD515 /* main.m */; };
 		FF9715A91CBDD426002CD515 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9715A81CBDD426002CD515 /* AppDelegate.m */; };
@@ -47,6 +53,11 @@
 		C04E9E42486600F24DC7B6B0 /* Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig"; path = "Pods/Target Support Files/Pods-5IOSMD_Assignment_MengyingFENG/Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig"; sourceTree = "<group>"; };
 		EB00D9031CC344C0007D9531 /* AddAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAddressViewController.h; sourceTree = "<group>"; };
 		EB00D9041CC344C0007D9531 /* AddAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAddressViewController.m; sourceTree = "<group>"; };
+		EB16EE5D1CE88E240032C72C /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		EB16EE5E1CE88E240032C72C /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		EB395A111CF1B13600B2DC1E /* 5IOSMD_Assignment_MengyingFENG-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "5IOSMD_Assignment_MengyingFENG-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB395A141CF1B2AF00B2DC1E /* ShoppingListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListTableViewCell.h; sourceTree = "<group>"; };
+		EB395A151CF1B2AF00B2DC1E /* ShoppingListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListTableViewCell.m; sourceTree = "<group>"; };
 		EB472E8B1CC279F2005AF7D4 /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.otf"; sourceTree = "<group>"; };
 		EB675E141CBE21D800C9384B /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		EB675E151CBE21D800C9384B /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
@@ -57,6 +68,12 @@
 		EB96EFAB1CC36701005E947C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		EBB4DFA51CC0AA9300033E96 /* CustomUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIView.h; sourceTree = "<group>"; };
 		EBB4DFA61CC0AA9300033E96 /* CustomUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIView.m; sourceTree = "<group>"; };
+		EBC1ED6B1CE6E70900544616 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EBC1ED6D1CE6EA7700544616 /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
+		EBC1ED6E1CE6EA7700544616 /* ShoppingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingList.m; sourceTree = "<group>"; };
+		EBC1ED721CE7028B00544616 /* DBShoppingList.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = DBShoppingList.db; sourceTree = "<group>"; };
+		EBC1ED751CE75C4800544616 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		EBC1ED761CE75C4800544616 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
 		FF9715A01CBDD426002CD515 /* 5IOSMD_Assignment_MengyingFENG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5IOSMD_Assignment_MengyingFENG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9715A41CBDD426002CD515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF9715A51CBDD426002CD515 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC1ED6C1CE6E70900544616 /* libsqlite3.tbd in Frameworks */,
 				EB96EFAC1CC36701005E947C /* MessageUI.framework in Frameworks */,
 				1965EA70C24D9BA449E9B96A /* libPods-5IOSMD_Assignment_MengyingFENG.a in Frameworks */,
 			);
@@ -102,6 +120,7 @@
 		43DB7D47CF1F4356D3261711 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBC1ED6B1CE6E70900544616 /* libsqlite3.tbd */,
 				7D1704E0DEF2484B9B06924A /* libPods-5IOSMD_Assignment_MengyingFENGTests.a */,
 				6D780F782608EADC9DF42544 /* libPods-5IOSMD_Assignment_MengyingFENG.a */,
 			);
@@ -148,6 +167,9 @@
 				EB88D7211CBF20E100D1CD5B /* CancelButton.m */,
 				EBB4DFA51CC0AA9300033E96 /* CustomUIView.h */,
 				EBB4DFA61CC0AA9300033E96 /* CustomUIView.m */,
+				EB395A111CF1B13600B2DC1E /* 5IOSMD_Assignment_MengyingFENG-Bridging-Header.h */,
+				EB395A141CF1B2AF00B2DC1E /* ShoppingListTableViewCell.h */,
+				EB395A151CF1B2AF00B2DC1E /* ShoppingListTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -155,6 +177,10 @@
 		EB675E111CBE20E300C9384B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBC1ED6D1CE6EA7700544616 /* ShoppingList.h */,
+				EBC1ED6E1CE6EA7700544616 /* ShoppingList.m */,
+				EB16EE5D1CE88E240032C72C /* Address.h */,
+				EB16EE5E1CE88E240032C72C /* Address.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -175,6 +201,15 @@
 				FF9715B51CBDD426002CD515 /* LaunchScreen.xib */,
 			);
 			name = "Storyboards & Xibs";
+			sourceTree = "<group>";
+		};
+		EBC1ED741CE75C2D00544616 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				EBC1ED751CE75C4800544616 /* DataService.h */,
+				EBC1ED761CE75C4800544616 /* DataService.m */,
+			);
+			name = DataService;
 			sourceTree = "<group>";
 		};
 		FF9715971CBDD426002CD515 = {
@@ -201,6 +236,7 @@
 		FF9715A21CBDD426002CD515 /* 5IOSMD_Assignment_MengyingFENG */ = {
 			isa = PBXGroup;
 			children = (
+				EBC1ED741CE75C2D00544616 /* DataService */,
 				EB675E111CBE20E300C9384B /* Model */,
 				EB675E101CBE20CD00C9384B /* View */,
 				EB675E0F1CBE20B500C9384B /* Controller */,
@@ -215,6 +251,7 @@
 		FF9715A31CBDD426002CD515 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EBC1ED721CE7028B00544616 /* DBShoppingList.db */,
 				FF9715A41CBDD426002CD515 /* Info.plist */,
 				FF9715A51CBDD426002CD515 /* main.m */,
 			);
@@ -326,6 +363,7 @@
 			files = (
 				FF9715B21CBDD426002CD515 /* Main.storyboard in Resources */,
 				FF9715B71CBDD426002CD515 /* LaunchScreen.xib in Resources */,
+				EBC1ED731CE7028B00544616 /* DBShoppingList.db in Resources */,
 				FF9715B41CBDD426002CD515 /* Images.xcassets in Resources */,
 				EB472E8C1CC27C60005AF7D4 /* Quicksand-Regular.otf in Resources */,
 			);
@@ -438,14 +476,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB395A161CF1B2AF00B2DC1E /* ShoppingListTableViewCell.m in Sources */,
 				EB675E161CBE21D800C9384B /* CustomButton.m in Sources */,
+				EBC1ED6F1CE6EA7700544616 /* ShoppingList.m in Sources */,
 				FF9715D41CBDD52C002CD515 /* TotalViewController.m in Sources */,
 				EB8F28C91CBE68030098FC14 /* CustomImageView.m in Sources */,
+				EB16EE5F1CE88E240032C72C /* Address.m in Sources */,
 				FF9715A91CBDD426002CD515 /* AppDelegate.m in Sources */,
 				FF9715CE1CBDD4A9002CD515 /* AddItemsViewController.m in Sources */,
 				EB88D7221CBF20E100D1CD5B /* CancelButton.m in Sources */,
 				FF9715D71CBDD558002CD515 /* AddressViewController.m in Sources */,
 				EB00D9051CC344C0007D9531 /* AddAddressViewController.m in Sources */,
+				EBC1ED771CE75C4800544616 /* DataService.m in Sources */,
 				EBB4DFA71CC0AA9300033E96 /* CustomUIView.m in Sources */,
 				FF9715DA1CBDD580002CD515 /* OtherViewController.m in Sources */,
 				FF9715A61CBDD426002CD515 /* main.m in Sources */,
@@ -574,10 +616,13 @@
 			baseConfigurationReference = 27DFBF8D674B0002825F8E02 /* Pods-5IOSMD_Assignment_MengyingFENG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = 5IOSMD_Assignment_MengyingFENG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ex.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "5IOSMD_Assignment_MengyingFENG/5IOSMD_Assignment_MengyingFENG-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -586,10 +631,12 @@
 			baseConfigurationReference = C04E9E42486600F24DC7B6B0 /* Pods-5IOSMD_Assignment_MengyingFENG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = 5IOSMD_Assignment_MengyingFENG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ex.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "5IOSMD_Assignment_MengyingFENG/5IOSMD_Assignment_MengyingFENG-Bridging-Header.h";
 			};
 			name = Release;
 		};
